@@ -6,6 +6,8 @@ from functools import reduce
 from typing import Optional, Callable
 import json
 import time
+import base64
+import zlib
 
 from .. import constants, errors
 from ..types import Bot, BuiltinMacro
@@ -456,9 +458,35 @@ class MacroCog:
         def title(text: str):
             return text.title()
 
+        @builtin("base64.encode")
+        def base64encode(string: str):
+            text_bytes = string.encode('utf-8')
+            base64_bytes = base64.b64encode(text_bytes)
+            return base64_bytes.decode('utf-8')
+        
+        @builtin("base64.decode")
+        def base64decode(string: str):
+            base64_bytes = string.encode('utf-8')
+            text_bytes = base64.b64decode(base64_bytes)
+            return text_bytes.decode('utf-8')
+
+        @builtin("zlib.compress")
+        def zlibcompress(data: str):
+            text_bytes = data.encode('utf-8')
+            compressed_bytes = zlib.compress(text_bytes)
+            base64_compressed = base64.b64encode(compressed_bytes)
+            return base64_compressed.decode('utf-8')
+        
+        @builtin("zlib.decompress")
+        def zlibdecompress(data: str):
+            base64_compressed = data.encode('utf-8')
+            compressed_bytes = base64.b64decode(base64_compressed)
+            text_bytes = zlib.decompress(compressed_bytes)
+            return text_bytes.decode('utf-8')
+
         self.builtins = dict(sorted(self.builtins.items(), key=lambda tup: tup[0]))
 
-    def parse_macros(self, objects: str, debug_info: bool, macros=None, init=True) -> tuple[Optional[str], Optional[list[str]]]:
+    def parse_macros(self, objects: str, debug_info: bool, macros=None, cmd="x", init=True) -> tuple[Optional[str], Optional[list[str]]]:
         if init:
             self.debug = []
             self.variables = {}
@@ -482,7 +510,7 @@ class MacroCog:
             try:
                 objects = (
                         objects[:match.start()] +
-                        self.parse_term_macro(terminal, macros, self.found, debug_info) +
+                        self.parse_term_macro(terminal, macros, self.found, cmd, debug_info) +
                         objects[match.end():]
                 )
             except errors.FailedBuiltinMacro as err:
@@ -494,7 +522,7 @@ class MacroCog:
             self.debug.append(f"[Out] {objects}")
         return objects, self.debug if len(self.debug) else None
 
-    def parse_term_macro(self, raw_variant, macros, step = 0, debug_info = False) -> str:
+    def parse_term_macro(self, raw_variant, macros, step = 0, cmd = "x", debug_info = False) -> str:
         raw_macro, *macro_args = re.split(r"(?<!(?<!\\)\\)/", raw_variant)
         if raw_macro in self.builtins:
             try:
@@ -505,12 +533,13 @@ class MacroCog:
         elif raw_macro in macros:
             macro = macros[raw_macro].value
             macro = macro.replace("$#", str(len(macro_args)))
+            macro = macro.replace("$!", cmd)
             macro_args = ["/".join(macro_args), *macro_args]
             arg_amount = 0
             iters = None
             while iters != 0 and arg_amount <= constants.MACRO_ARG_LIMIT:
                 iters = 0
-                matches = [*re.finditer(r"\$(-?\d+|#)", macro)]
+                matches = [*re.finditer(r"\$(-?\d+|#|!)", macro)]
                 for match in reversed(matches):
                     iters += 1
                     arg_amount += 1
@@ -520,6 +549,8 @@ class MacroCog:
                     if argument == "#":
                         self.debug.append(f"[Step {step}:{arg_amount}:#] {len(macro_args) - 1} arguments")
                         infix = str(len(macro_args) - 1)
+                    elif argument == "!":
+                        infix = cmd
                     else:
                         argument = int(argument)
                         try:

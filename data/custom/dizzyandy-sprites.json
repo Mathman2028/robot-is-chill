@@ -483,7 +483,7 @@
             "1",
             "1"
         ],
-        "tiling": "2"
+        "tiling": "0"
     },
     {
         "name": "text_ixix",
@@ -563,6 +563,15 @@
         "color": [
             "5",
             "3"
+        ],
+        "tiling": "1"
+    },
+    {
+        "name": "will_anyone_notice_this_n1",
+        "sprite": "will_anyone_notice_this_n1",
+        "color": [
+            "0",
+            "1"
         ],
         "tiling": "1"
     },
@@ -693,6 +702,42 @@
         "tiling": "-1"
     },
     {
+        "name": "two words",
+        "sprite": "two words",
+        "color": [
+            "6",
+            "3"
+        ],
+        "tiling": "0"
+    },
+    {
+        "name": "text_two words",
+        "sprite": "text_two words",
+        "color": [
+            "6",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "two~words",
+        "sprite": "two words",
+        "color": [
+            "6",
+            "3"
+        ],
+        "tiling": "0"
+    },
+    {
+        "name": "text_two~words",
+        "sprite": "text_two words",
+        "color": [
+            "6",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
         "name": "tw",
         "sprite": "two words",
         "color": [
@@ -723,8 +768,8 @@
         "name": "koke",
         "sprite": "koke",
         "color": [
-            "0",
-            "3"
+            "4",
+            "2"
         ],
         "tiling": "2"
     },
@@ -732,8 +777,8 @@
         "name": "text_koke",
         "sprite": "text_koke",
         "color": [
-            "0",
-            "3"
+            "4",
+            "2"
         ],
         "tiling": "-1"
     },
@@ -756,7 +801,7 @@
         "tiling": "-1"
     },
     {
-        "name": "cove",
+        "name": "covebox",
         "sprite": "cmbox",
         "color": [
             "0",
@@ -765,7 +810,16 @@
         "tiling": "-1"
     },
     {
-        "name": "mount",
+        "name": "covewall",
+        "sprite": "cmwall",
+        "color": [
+            "0",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "covemonty",
         "sprite": "cmplayer",
         "color": [
             "0",
@@ -807,7 +861,7 @@
             "0",
             "3"
         ],
-        "tiling": "2"
+        "tiling": "0"
     },
     {
         "name": "text_del",
@@ -825,7 +879,7 @@
             "5",
             "3"
         ],
-        "tiling": "2"
+        "tiling": "0"
     },
     {
         "name": "text_new",
@@ -843,7 +897,7 @@
             "1",
             "4"
         ],
-        "tiling": "2"
+        "tiling": "0"
     },
     {
         "name": "text_letter",
@@ -860,6 +914,15 @@
         "color": [
             "0",
             "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_sofa",
+        "sprite": "text_sofa",
+        "color": [
+            "2",
+            "2"
         ],
         "tiling": "-1"
     },
@@ -1179,6 +1242,15 @@
         "tiling": "-1"
     },
     {
+        "name": "construct_11",
+        "sprite": "construct_9",
+        "color": [
+            "0",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
         "name": "text",
         "sprite": "text",
         "color": [
@@ -1246,6 +1318,24 @@
         "sprite": "swaspa",
         "color": [
             "3",
+            "1"
+        ],
+        "tiling": "0"
+    },
+    {
+        "name": "text_babacharacterthatlookslikethis",
+        "sprite": "text_babacharacterthatlookslikethis",
+        "color": [
+            "5",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "babacharacterthatlookslikethis",
+        "sprite": "babacharacterthatlookslikethis",
+        "color": [
+            "5",
             "1"
         ],
         "tiling": "0"
@@ -1359,11 +1449,101 @@
         "tiling": "-1"
     },
     {
-        "name": "text_metanode",
-        "sprite": "text_metanode",
+        "name": "text_<defa",
+        "sprite": "text_lessdefa",
         "color": [
-            "2",
-            "4"
+            "0",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "zarjo",
+        "sprite": "zarjo",
+        "color": [
+            "1",
+            "2"
+        ],
+        "tiling": "2"
+    },
+    {
+        "name": "dreamwall",
+        "sprite": "dreamwall",
+        "color": [
+            "1",
+            "3"
+        ],
+        "tiling": "1"
+    },
+    {
+        "name": "text_thase",
+        "sprite": "text_thase",
+        "color": [
+            "0",
+            "3"
+        ],
+        "tiling": "0"
+    },
+    {
+        "name": "text_thes",
+        "sprite": "text_thes",
+        "color": [
+            "0",
+            "3"
+        ],
+        "tiling": "0"
+    },
+    {
+        "name": "text_thes_arrow",
+        "sprite": "text_thes_arrow",
+        "color": [
+            "0",
+            "3"
+        ],
+        "tiling": "0"
+    },
+    {
+        "name": "text_thase_arrow",
+        "sprite": "text_thase_arrow",
+        "color": [
+            "0",
+            "3"
+        ],
+        "tiling": "0"
+    },
+    {
+        "name": "text_th",
+        "sprite": "text_th",
+        "color": [
+            "0",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_th_arrow",
+        "sprite": "text_th_arrow",
+        "color": [
+            "0",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_\u00a3",
+        "sprite": "text_\u00a3",
+        "color": [
+            "1",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_dollar",
+        "sprite": "text_$",
+        "color": [
+            "5",
+            "3"
         ],
         "tiling": "-1"
     },
@@ -1373,6 +1553,474 @@
         "color": [
             3,
             2
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "stamp",
+        "sprite": "stamp",
+        "color": [
+            "1",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "generaldata",
+        "sprite": "generaldata",
+        "color": [
+            "0",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "generaldata2",
+        "sprite": "generaldata2",
+        "color": [
+            "2",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "generaldata3",
+        "sprite": "generaldata3",
+        "color": [
+            "4",
+            "1"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "generaldata4",
+        "sprite": "generaldata4",
+        "color": [
+            "3",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "generaldata5",
+        "sprite": "generaldata5",
+        "color": [
+            "2",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "mod",
+        "sprite": "mod",
+        "color": [
+            "3",
+            "1"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "obj_mod",
+        "sprite": "obj_mod",
+        "color": [
+            "3",
+            "0"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "logic_mod",
+        "sprite": "logic_mod",
+        "color": [
+            "3",
+            "1"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "thase",
+        "sprite": "thase",
+        "color": [
+            "0",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "swo/rd",
+        "sprite": "sword",
+        "color": [
+            "0",
+            "2"
+        ],
+        "tiling": "0"
+    },
+    {
+        "name": "text_swo/rd",
+        "sprite": "text_sword",
+        "color": [
+            "0",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_tada",
+        "sprite": "text_tada",
+        "color": [
+            "2",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "tada",
+        "sprite": "tada",
+        "color": [
+            "0",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_folium",
+        "sprite": "text_folium",
+        "color": [
+            "2",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "folium",
+        "sprite": "folium",
+        "color": [
+            "6",
+            "0"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_gust",
+        "sprite": "text_gust",
+        "color": [
+            "1",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "gust",
+        "sprite": "gust",
+        "color": [
+            "1",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "advert",
+        "sprite": "advert",
+        "color": [
+            "3",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_jird",
+        "sprite": "text_jird",
+        "color": [
+            "2",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "jird",
+        "sprite": "jird",
+        "color": [
+            "2",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_alone3",
+        "sprite": "text_alone3",
+        "color": [
+            "2",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_alone4",
+        "sprite": "text_alone4",
+        "color": [
+            "2",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_render",
+        "sprite": "text_render",
+        "color": [
+            "4",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_evoke",
+        "sprite": "text_evoke",
+        "color": [
+            "4",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_self",
+        "sprite": "text_self",
+        "color": [
+            "3",
+            "1"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_noise",
+        "sprite": "text_noise",
+        "color": [
+            "0",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_hasnot",
+        "sprite": "text_has not",
+        "color": [
+            "2",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_restart",
+        "sprite": "text_restart",
+        "color": [
+            "1",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_rule",
+        "sprite": "text_rule",
+        "color": [
+            "4",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_add",
+        "sprite": "text_add",
+        "color": [
+            "0",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_sub",
+        "sprite": "text_sub",
+        "color": [
+            "0",
+            "1"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_signal2",
+        "sprite": "text_signal2",
+        "color": [
+            "5",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_receive2",
+        "sprite": "text_receive2",
+        "color": [
+            "5",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_that's",
+        "sprite": "text_thats",
+        "color": [
+            "1",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_bounce",
+        "sprite": "text_bounce",
+        "color": [
+            "4",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_wander",
+        "sprite": "text_wander",
+        "color": [
+            "5",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_flipdown",
+        "sprite": "text_flipdown",
+        "color": [
+            "5",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_flipright",
+        "sprite": "text_flipright",
+        "color": [
+            "5",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_flipup",
+        "sprite": "text_flipup",
+        "color": [
+            "5",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_flipleft",
+        "sprite": "text_flipleft",
+        "color": [
+            "5",
+            "3"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "glyph_metaevent2",
+        "sprite": "glyph_metaevent2",
+        "color": [
+            "5",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "glyph_node",
+        "sprite": "glyph_node",
+        "color": [
+            "2",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "glyph_metanode",
+        "sprite": "glyph_metanode",
+        "color": [
+            "2",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "glyph_metanode2",
+        "sprite": "glyph_metanode2",
+        "color": [
+            "2",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_metanode",
+        "sprite": "text_metanode",
+        "color": [
+            "2",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "event_node",
+        "sprite": "event_node",
+        "color": [
+            "2",
+            "4"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "glyph_obj",
+        "sprite": "glyph_obj",
+        "color": [
+            "0",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "glyph_metaobj",
+        "sprite": "glyph_metaobj",
+        "color": [
+            "0",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "glyph_metaobj2",
+        "sprite": "glyph_metaobj2",
+        "color": [
+            "0",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_metaobj",
+        "sprite": "text_metaobj",
+        "color": [
+            "0",
+            "2"
+        ],
+        "tiling": "-1"
+    },
+    {
+        "name": "text_it'll",
+        "sprite": "text_it'll",
+        "color": [
+            "5",
+            "3"
         ],
         "tiling": "-1"
     }
