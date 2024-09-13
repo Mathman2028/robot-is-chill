@@ -252,35 +252,8 @@
         "tiling": "-1"
     },
     {
-        "name": "text_willperform",
-        "sprite": "text_willperform",
-        "color": [
-            "3",
-            "1"
-        ],
-        "tiling": "-1"
-    },
-    {
         "name": "text_willdraw",
         "sprite": "text_willdraw",
-        "color": [
-            "0",
-            "3"
-        ],
-        "tiling": "-1"
-    },
-    {
-        "name": "text_willjot",
-        "sprite": "text_willjot",
-        "color": [
-            "0",
-            "3"
-        ],
-        "tiling": "-1"
-    },
-    {
-        "name": "text_willtype",
-        "sprite": "text_willtype",
         "color": [
             "0",
             "3"

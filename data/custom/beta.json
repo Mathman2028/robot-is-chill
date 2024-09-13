@@ -63,15 +63,6 @@
          ]
      },
      {
-         "name": "dustbeta",
-         "sprite": "dustbeta",
-         "tiling": "-1",
-         "color": [
-            "2",
-            "4"
-         ]
-     },
-     {
         "name": "errorbeta",
         "sprite": "errorbeta",
         "tiling": "-1",
@@ -288,30 +279,12 @@
          ]
       },
       {
-         "name": "text_morebeta",
-         "sprite": "text_morebeta",
-         "tiling": "-1",
-         "color": [
-            "4",
-            "1"
-         ]
-      },
-      {
          "name": "text_handbeta",
          "sprite": "text_handbeta",
          "tiling": "-1",
          "color": [
             "0",
             "3"
-         ]
-      },
-      {
-         "name": "text_lovebeta",
-         "sprite": "text_lovebeta",
-         "tiling": "-1",
-         "color": [
-            "4",
-            "1"
          ]
       },
       {
