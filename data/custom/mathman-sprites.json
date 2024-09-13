@@ -133,7 +133,7 @@
             5,
             3
         ],
-        "tiling": "-1"
+        "tiling": "0"
     },
     {
         "name": "dice",
@@ -160,7 +160,7 @@
             0,
             2
         ],
-        "tiling": "-1"
+        "tiling": "0"
     },
     {
         "name": "dice",

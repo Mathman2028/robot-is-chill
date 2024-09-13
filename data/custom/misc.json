@@ -1189,24 +1189,6 @@
         "tiling": "-1"
     },
     {
-        "name": "cactus3",
-        "sprite": "cactus",
-        "color": [
-            "5",
-            "3"
-        ],
-        "tiling": "-1"
-    },
-    {
-        "name": "text_cactus3",
-        "sprite": "text_cactus",
-        "color": [
-            "5",
-            "3"
-        ],
-        "tiling": "-1"
-    },
-    {
         "name": "cactus2",
         "sprite": "cactus",
         "color": [

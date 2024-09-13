@@ -573,7 +573,7 @@
             "0",
             "1"
         ],
-        "tiling": "1"
+        "tiling": "-1"
     },
     {
         "name": "traitrai",
@@ -1716,7 +1716,7 @@
             "1",
             "4"
         ],
-        "tiling": "-1"
+        "tiling": "0"
     },
     {
         "name": "advert",
@@ -1743,7 +1743,7 @@
             "2",
             "3"
         ],
-        "tiling": "-1"
+        "tiling": "2"
     },
     {
         "name": "text_alone3",
