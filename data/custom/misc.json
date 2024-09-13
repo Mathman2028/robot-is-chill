@@ -1171,15 +1171,6 @@
         "tiling": "0"
     },
     {
-        "name": "cactus3",
-        "sprite": "cactus",
-        "color": [
-            "5",
-            "3"
-        ],
-        "tiling": "-1"
-    },
-    {
         "name": "cactus2",
         "sprite": "cactus",
         "color": [
@@ -1200,15 +1191,6 @@
     {
         "name": "cactus3",
         "sprite": "cactus3",
-        "color": [
-            "5",
-            "3"
-        ],
-        "tiling": "-1"
-    },
-    {
-        "name": "text_cactus3",
-        "sprite": "text_cactus3",
         "color": [
             "5",
             "3"
@@ -1636,7 +1618,7 @@
             "1",
             "4"
         ],
-        "tiling": "0"
+        "tiling": "4"
     },
     {
         "name": "needle",
